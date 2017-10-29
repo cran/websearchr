@@ -21,14 +21,20 @@ Currently supported websites:
 
 Any other website can be accessed with `open(my-website.com)`.
 
-Bonus: obtain the number of Google hits for a combination of search terms with `google.hits("search terms")`.
-
 To use a browser other than the default on your computer use `options(browser = "path to browser")`. For example, on Mac OS X `options(browser = "/usr/bin/open -a '/Applications/Safari.app'")` or Windows `options(browser = "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe")`. To check which browser is set as the default use `getOption("browser")`.
 
 Installation
 ------------
 
-You can install websearchr from GitHub with:
+[![CRAN Version](https://www.r-pkg.org/badges/version/websearchr)](https://cran.r-project.org/package=websearchr) ![Downloads](https://cranlogs.r-pkg.org/badges/websearchr) [![Build Status](https://travis-ci.org/fschaff/websearchr.svg?branch=master)](https://travis-ci.org/fschaff/websearchr)
+
+You can install websearchr from CRAN with:
+
+``` r
+install.packages("websearchr")
+```
+
+Or install the development version from GitHub:
 
 ``` r
 # install.packages("devtools")
@@ -52,7 +58,7 @@ library(websearchr)
 open(r-project.org)
 #> Opening https://www.r-project.org in browser
 google("my search terms")
-#> Opening Google search for "my search terms" in browser.
+#> Opening Google search for "my search terms" in browser
 stackoverflow("my r problem")
-#> Opening Stackoverflow search for "my r problem" in browser.
+#> Opening Stackoverflow search for "my r problem" in browser
 ```
